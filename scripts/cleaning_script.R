@@ -23,11 +23,12 @@ sta_data <- read_csv("raw_data/responses.csv") %>%
          location = str_to_title(location),
         # Some NA's in role so changed to "Other"
          role = ifelse(is.na(role), "Other", role),
-        # replace url with file path
-         img = sub('.*\\/', "\"raw_data/Rjq5VL0U/M9bXDBTBKxb6/", img),
-         img = paste0(img, "\""),
+        # remove url - just leaves with file name
+         img = sub('.*\\/', "", img),
+        # removing last names
          name = gsub("(.*) .*", "\\1", name),
-        name = str_to_title(name)
+        # setting all names to title case
+         name = str_to_title(name)
         ) %>% 
   #Adding coordinates matched by location
   left_join(coordinates, by = "location") %>% 
