@@ -1,0 +1,17 @@
+
+#panel {
+  /* Appearance */
+  background-color: white;
+  padding: 0 10px 10px 10px;
+  cursor: move;
+  /* Fade out while not hovering */
+  opacity: 0.75;
+  zoom: 0.9;
+  transition: opacity 500ms 1s;
+}
+
+#panel:hover {
+  /* Fade in while hovering */
+  opacity: 0.75;
+  transition-delay: 0;
+}

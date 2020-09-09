@@ -1,0 +1,10 @@
+name: homebrew_2_mr3
+title:
+username:
+account: rhi-batstone
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2775534
+bundleId: 3610545
+url: https://rhi-batstone.shinyapps.io/homebrew_2_mr3/
+when: 1599655157.801
