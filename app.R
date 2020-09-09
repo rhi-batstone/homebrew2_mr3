@@ -2,6 +2,7 @@ library(tidyverse)
 library(leaflet)
 library(shiny)
 library(shinythemes)
+library(leafpop)
 
 sta_data <- read_csv("clean_data/sta_data.csv")
 
@@ -10,7 +11,7 @@ roles <- unique(sta_data$role)
 
 # Creates the sta icon for points on the map
 sta_icon <- makeIcon(
-    iconUrl = "img/sta_logo.jpg",
+    iconUrl = "www/sta_logo.jpg",
     iconWidth = 20, iconHeight = 20,
     iconAnchorX = 0, iconAnchorY = 0)
 
@@ -65,10 +66,14 @@ server <- function(input, output) {
             addMarkers(lng = ~long,
                        lat = ~lat,
                        icon = sta_icon,
+                       group = "sta_images",
                        popup = paste("Location:", role_filtered()$location, "<br>",
                                      "Name:", role_filtered()$name, "<br>",
-                                     "Role:", role_filtered()$role)
+                                     "Role:", role_filtered()$role,
+                                     "<div><a target='_blank' href='", role_filtered()$img,"'><img width=100%, height=100% src='", role_filtered()$img,"' ></a></div>"
+                                     )
                        )
+            
         
     })
 }
