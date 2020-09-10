@@ -1,31 +1,31 @@
-﻿location,lat,long
-Aberdeen ,57.146262,-2.136575
-Airdrie ,55.864026,-4.011948
-Banchory ,57.052191,-2.488395
-Blackhall,55.958089,-3.25838
-Collace ,56.47696,-3.29387
-Comrie,56.3791,-3.9949
-Cumbernauld ,55.95129,-3.998891
-Dalkeith ,55.884802,-3.066745
-Greenloaning,56.189,-3.970343
-Dundee ,56.473055,-2.993131
-Dunfermline ,56.070601,-3.438711
-Dunlop ,55.71198,-4.53622
-East Linton ,55.986069,-2.654709
-Edinburgh ,55.944321,-3.242511
-Falkirk ,56.0015,-3.783893
-Glasgow ,55.860766,-4.268234
-India,22.412321,79.132924
-Insch ,57.341507,-2.615817
-Inverkeithing ,56.035754,-3.415499
-Livingston ,55.891517,-3.519453
-Midlothian ,55.820577,-3.106224
-Musselburgh ,55.9417,-3.04991
-North Middleton ,55.82048,-3.02656
-Norwich,52.650229,1.294508
-Oxgangs,55.906501,-3.224893
-Paisley ,55.83173,-4.43254
-Perth ,56.395704,-3.435877
-South Queensferry ,55.989508,-3.403728
-Stepps,55.8953,-4.139753
-Stornoway ,58.208221,-6.392546
+﻿location,lat,long,
+Aberdeen ,57.146262,-2.136575,
+Airdrie ,55.864026,-4.011948,
+Banchory ,57.052191,-2.488395,
+Blackhall,55.958089,-3.25838,
+Collace ,56.47696,-3.29387,
+Comrie,56.3791,-3.9949,
+Cumbernauld ,55.95129,-3.998891,
+Dalkeith ,55.884802,-3.066745,
+Greenloaning,56.189,-3.970343,
+Dundee ,56.473055,-2.993131,
+Dunfermline ,56.070601,-3.438711,
+Dunlop ,55.71198,-4.53622,
+East Linton ,55.986069,-2.654709,
+Edinburgh ,55.953082,-3.18861,
+Falkirk ,56.0015,-3.783893,
+Glasgow ,55.860766,-4.268234,
+India,22.412321,79.132924,
+Insch ,57.341507,-2.615817,
+Inverkeithing ,56.035754,-3.415499,
+Livingston ,55.891517,-3.519453,
+Midlothian ,55.820577,-3.106224,
+Musselburgh ,55.9417,-3.04991,
+North Middleton ,55.82048,-3.02656,
+Norwich,52.650229,1.294508,
+Oxgangs,55.906501,-3.224893,
+Paisley ,55.83173,-4.43254,
+Perth ,56.395704,-3.435877,
+South Queensferry ,55.989508,-3.403728,
+Stepps,55.8953,-4.139753,
+Stornoway ,58.208221,-6.392546,
