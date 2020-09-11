@@ -10,11 +10,11 @@ sta_data <- read_csv("clean_data/sta_data.csv")
 roles <- unique(sta_data$role)
 
 # Creates the sta icon for points on the map
-sta_icon <- makeIcon(
-  iconUrl = "www/sta_logo.jpg",
-  iconWidth = 20, iconHeight = 20,
-  iconAnchorX = 0, iconAnchorY = 0
-)
+# sta_icon <- makeIcon(
+#   iconUrl = "www/sta_logo.jpg",
+#   iconWidth = 20, iconHeight = 20,
+#   iconAnchorX = 0, iconAnchorY = 0
+# )
 
 
 # Define UI for application that draws a histogram
@@ -88,9 +88,7 @@ server <- function(input, output) {
       addMarkers(
         lng = ~long,
         lat = ~lat,
-        icon = sta_icon,
-        # stroke = F,
-        # color = "magenta",
+        #icon = sta_icon,
         group = "sta_images",
         clusterOptions = T,
         popup = paste(
