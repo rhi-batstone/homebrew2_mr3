@@ -33,7 +33,7 @@ sta_data <- read_csv("raw_data/responses.csv") %>%
   #Adding coordinates matched by location
   left_join(coordinates, by = "location") %>% 
   #this jitter is so slightly move each coordinate so they all show up on the map when not using clustering
-  #mutate(lat = jitter(lat, 1), long = jitter(long, 1)) %>% 
+  mutate(lat = jitter(lat, 1), long = jitter(long, 1)) %>% 
   write_csv("clean_data/sta_data.csv")
 
 
