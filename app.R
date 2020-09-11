@@ -20,7 +20,12 @@ sta_icon <- makeIcon(
 # Define UI for application that draws a histogram
 ui <- dashboardPage(
     dashboardHeader(title = "Homebrew 2"),
-    dashboardSidebar(),
+    dashboardSidebar(
+        sidebarMenu(
+            menuItem("Map", tabName = "dashboard", icon = icon("dashboard")),
+            menuItem("Viz", tabName = "widgets", icon = icon("jedi-order"))
+        )
+    ),
     dashboardBody(
     #theme = shinytheme("flatly"),
     # CSS for adding the style to the absolute panel
