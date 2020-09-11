@@ -24,7 +24,7 @@ sta_data <- read_csv("raw_data/responses.csv") %>%
         # Some NA's in role so changed to "Other"
          role = ifelse(is.na(role), "Other", role),
         # remove url - just leaves with file name
-         img = sub('.*\\/', "", img),
+         #img = sub('.*\\/', "", img),
         # removing last names
          name = gsub("(.*) .*", "\\1", name),
         # setting all names to title case
