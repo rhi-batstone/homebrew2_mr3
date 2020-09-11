@@ -27,7 +27,7 @@ ui <- dashboardPage(
     tags$head(includeCSS("styles.css")),
     
     # CSS for making the map full screen
-    tags$style(type = "text/css", "#map {height: calc(110vh - 80px) !important;}"),
+    tags$style(type = "text/css", "#map {height: calc(100vh - 80px) !important;}"),
     
     # the map output
     leafletOutput("map"),
@@ -35,7 +35,7 @@ ui <- dashboardPage(
     # The moveable panel with role selection in
     absolutePanel(id = "panel",
         h1("STA Roles"),
-        top = 100, left = 10, draggable = TRUE, width = "20%", #style = "z-index:500; min-width: 300px;",
+        bottom = 50, draggable = TRUE, width = "20%", #style = "z-index:500; min-width: 300px;",
         checkboxGroupInput("role_select",
                            "Select Roles:",
                            choices = roles,
