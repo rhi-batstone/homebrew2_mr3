@@ -1,7 +1,6 @@
 library(tidyverse)
 library(leaflet)
 library(shiny)
-library(shinythemes)
 library(leafpop)
 library(shinydashboard)
 
@@ -50,7 +49,8 @@ ui <- dashboardPage(
         absolutePanel(
           id = "panel",
           h1("STA Roles"),
-          bottom = 50,
+          top = 500,
+          #left = 10,
           draggable = TRUE,
           width = "20%",
           checkboxGroupInput("role_select",
