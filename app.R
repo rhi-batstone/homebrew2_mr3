@@ -29,7 +29,9 @@ ui <- dashboardPage(
 
   dashboardBody(
     tabItems(
-      tabItem(tabName = "viz"),
+      tabItem(tabName = "viz", 
+              h1("Nothing here yet")),
+      
       tabItem(
         tabName = "map",
 
