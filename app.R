@@ -3,6 +3,7 @@ library(leaflet)
 library(shiny)
 library(shinythemes)
 library(leafpop)
+library(shinydashboard)
 
 sta_data <- read_csv("clean_data/sta_data.csv")
 
@@ -17,8 +18,11 @@ sta_icon <- makeIcon(
 
 
 # Define UI for application that draws a histogram
-ui <- bootstrapPage(
-    theme = shinytheme("flatly"),
+ui <- dashboardPage(
+    dashboardHeader(title = "Homebrew 2"),
+    dashboardSidebar(),
+    dashboardBody(
+    #theme = shinytheme("flatly"),
     # CSS for adding the style to the absolute panel
     tags$head(includeCSS("styles.css")),
     
@@ -30,7 +34,7 @@ ui <- bootstrapPage(
     
     # The moveable panel with role selection in
     absolutePanel(id = "panel",
-        h1("Who is STA?"),
+        h1("STA Roles"),
         top = 100, left = 10, draggable = TRUE, width = "20%", #style = "z-index:500; min-width: 300px;",
         checkboxGroupInput("role_select",
                            "Select Roles:",
@@ -39,7 +43,7 @@ ui <- bootstrapPage(
         "You can drag me!"
     )
 
-
+)
 )
 
 
