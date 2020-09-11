@@ -22,8 +22,8 @@ ui <- dashboardPage(
   dashboardHeader(title = "Homebrew 2"),
   dashboardSidebar(
     sidebarMenu(
-      menuItem("Map", tabName = "map", icon = icon("dashboard")),
-      menuItem("Viz", tabName = "viz", icon = icon("jedi-order"))
+      menuItem("Viz", tabName = "viz", icon = icon("jedi-order")),
+      menuItem("Map", tabName = "map", icon = icon("dashboard"))
     )
   ),
 
